@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 import HomeHeader from './HomeHeader';
 import HomeMain from './HomeMain';
