@@ -1,20 +1,16 @@
 import React from 'react';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
-
-import HomeHeader from './HomeHeader';
-import HomeMain from './HomeMain';
-import HomeYellowBar from './HomeYellowBar';
-import HomeFourSteps from './HomeFourSteps';
 import HomeAboutUs from './HomeAboutUs';
-import HomeWhoWeHelp from './HomeWhoWeHelp';
 import HomeContact from './HomeContact';
 import HomeFooter from './HomeFooter';
-
-
+import HomeFourSteps from './HomeFourSteps';
+import HomeHeader from './HomeHeader';
+import HomeMain from './HomeMain';
+import HomeWhoWeHelp from './HomeWhoWeHelp';
+import HomeYellowBar from './HomeYellowBar';
 
 const Home = () => {
-    return (<>
+    return (
+        <>
           <HomeHeader/>
           <HomeMain/>
           <HomeYellowBar/>
@@ -26,6 +22,5 @@ const Home = () => {
         </>
     )
 }
-
 
 export default Home; 

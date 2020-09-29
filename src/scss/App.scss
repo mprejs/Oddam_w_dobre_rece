@@ -1,0 +1,113 @@
+@import './settings/colors';
+@import './settings/fonts';
+// @import './reset.scss';
+
+// GENERAL STYLES
+
+body {
+    box-sizing: border-box;
+}
+
+.mainText {
+    color: $color-main;
+    font-size: 38px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.76px;
+}
+
+.decorativeElement {
+    margin: 25px auto;
+    width: 253px;
+    height: 33px;
+    background: transparent url('../assets/Decoration.svg') 0% 0% no-repeat padding-box;
+}
+
+.btn {
+    border: 0.75px solid $color-main;
+    margin: 22px;
+    padding: auto;
+    height: 120px;
+    width: 310px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    * {
+        text-decoration: none;
+        text-transform: uppercase;;
+        text-align: center;
+        font: normal normal 300 36px/45px Open Sans;
+        letter-spacing: 0px;
+        color: #3C3C3C;
+        opacity: 1;
+    }
+}
+
+// SECTIONS STYLES
+
+.homeHeader {
+    position: absolute;
+    right: 0px;
+    width: 60vw;
+    margin: 5vh 10vw;
+    .loginMenu {
+        font-family: $font-base;
+        font-size: 14px;
+        font-weight: 400;
+        color: $color-login-menu;
+        display: flex;
+        justify-content: flex-end;
+        li {
+            padding: 9px 10px;
+            border: solid yellow 2px;
+            list-style: none;
+            .menuLink {
+                text-decoration: none;
+                color: inherit
+            }
+        }
+    }
+    .navMenu {
+        font-family: $font-base;
+        font-size: 18px;
+        font-weight: 400;
+        color: $color-main;
+        display: flex;
+        justify-content: flex-end;
+        li {
+            list-style: none;
+            .navLink {
+                text-decoration: none;
+                padding: 9px 20px;
+            }
+            .navLinkActive {
+                border: solid $color-main 0.75px;
+            }
+        }
+    }
+}
+
+.homeMain {
+    width: 99vw;
+    height: 90vh;
+    background-image: url('../assets/Home-Hero-Image.jpg');
+    background-position: right 55vw top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .homeMainSection {
+        margin-left: auto; 
+        margin-right: 0;
+        width: 55vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .mainRedirect {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+    }
+}
