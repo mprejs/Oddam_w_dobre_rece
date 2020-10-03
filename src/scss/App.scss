@@ -108,6 +108,162 @@ body {
             justify-content: center;
             align-items: center;
             padding: 0;
+            margin: 0;
         }
+    }
+}
+
+.homeYellowBar {
+    width: 99vw;
+    height: 40vh;
+    background: transparent url('../assets/3\ Columns\ Background.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    .yellowBarStat {
+        height: 100%;
+        flex-basis: 20vw;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        .yellowBarStatNumber {
+            text-align: center;
+            color: $color-stat;
+            font-family: $font-base;
+            font-weight: 300;
+            font-size: 90px;
+            line-height: 122px;
+            margin-top: 46px;
+            margin-bottom: 10px;
+        }
+        .yellowBarStatTitle {
+            text-align: center;
+            color: $color-main;
+            font-family: $font-base;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 48px;
+        }
+        .yellowBarStatDiscription {
+            text-align: center;
+            color: $color-main;
+            font-family: $font-alt;
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+    }
+}
+
+.homeFourSteps {
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 55px;
+    .fourSteps {
+        width:  100%;
+        background-color: $color-background-alt;
+        .fourStepsList {
+            width: 60%;
+            height: 325px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            margin: auto;
+            list-style: none;
+            .fourStepsStep {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .stepIcon {
+                    width: 83px;
+                    height: 83px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                .iconShirt {
+                    background-image: url(../assets/Icon-1.svg);
+                }
+                .iconBag {
+                    background-image: url(../assets/Icon-2.svg);
+                }
+                .iconGlas {
+                    background-image: url(../assets/Icon-3.svg);
+                }
+                .iconExchange {
+                    background-image: url(../assets/Icon-4.svg);
+                }
+                .stepTitle {
+                    font-family: $font-base;
+                    font-size: 18px;
+                    text-align: center;
+                    color: $color-main;
+                    margin-top: 10px;
+                }
+                .stepUnderline {
+                    width: 70px;
+                    height: 0;
+                    border: 1px solid $color-underline;
+                    margin: 10px;
+                }
+                .stepDiscription {
+                    font-family: $font-base;
+                    font-size: 16px;
+                    text-align: center;
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}
+
+.homeAboutUs {
+    width: 99vw;
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 45px;
+    .aboutUs {
+        width: 50%;
+        height: 100%;
+        background-color: $color-background-alt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .aboutUsText {
+            width: 30vw;
+            font-family: $font-base;
+            font-size: 30px;
+            text-align: center;
+            color: $color-main;
+            line-height: 54px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .aboutUsSign {
+            width: 30vw;
+            height: 150px;
+            background-image: url(../assets/Signature.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+        }
+    }
+    .aboutUsImage {
+        width: 50%;
+        height: 100%;
+        background-image: url(../assets/People.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
