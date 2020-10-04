@@ -2,7 +2,7 @@
   "name": "oddam_w_dobre_rece",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mprejs.github.io/oddam-w-dobre-rece",
+  "homepage": "https://mprejs.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
