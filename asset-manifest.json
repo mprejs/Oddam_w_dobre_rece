@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.8eba32c7.chunk.css",
-    "main.js": "/static/js/main.c592438f.chunk.js",
-    "main.js.map": "/static/js/main.c592438f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.69c2bebb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.69c2bebb.js.map",
-    "static/js/2.7ee7b19f.chunk.js": "/static/js/2.7ee7b19f.chunk.js",
-    "static/js/2.7ee7b19f.chunk.js.map": "/static/js/2.7ee7b19f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.3c3d0d114ba9629b76185c948a6cb874.js": "/precache-manifest.3c3d0d114ba9629b76185c948a6cb874.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.8eba32c7.chunk.css.map": "/static/css/main.8eba32c7.chunk.css.map",
-    "static/js/2.7ee7b19f.chunk.js.LICENSE.txt": "/static/js/2.7ee7b19f.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/static/media/Signature.e54cfcfc.svg"
+    "main.css": "/Oddam_w_dobre_rece/static/css/main.133aa03f.chunk.css",
+    "main.js": "/Oddam_w_dobre_rece/static/js/main.22eb5b54.chunk.js",
+    "main.js.map": "/Oddam_w_dobre_rece/static/js/main.22eb5b54.chunk.js.map",
+    "runtime-main.js": "/Oddam_w_dobre_rece/static/js/runtime-main.183cf467.js",
+    "runtime-main.js.map": "/Oddam_w_dobre_rece/static/js/runtime-main.183cf467.js.map",
+    "static/js/2.7ee7b19f.chunk.js": "/Oddam_w_dobre_rece/static/js/2.7ee7b19f.chunk.js",
+    "static/js/2.7ee7b19f.chunk.js.map": "/Oddam_w_dobre_rece/static/js/2.7ee7b19f.chunk.js.map",
+    "index.html": "/Oddam_w_dobre_rece/index.html",
+    "precache-manifest.f27dbb5871654e454f1e017f13e362ab.js": "/Oddam_w_dobre_rece/precache-manifest.f27dbb5871654e454f1e017f13e362ab.js",
+    "service-worker.js": "/Oddam_w_dobre_rece/service-worker.js",
+    "static/css/main.133aa03f.chunk.css.map": "/Oddam_w_dobre_rece/static/css/main.133aa03f.chunk.css.map",
+    "static/js/2.7ee7b19f.chunk.js.LICENSE.txt": "/Oddam_w_dobre_rece/static/js/2.7ee7b19f.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/Oddam_w_dobre_rece/static/media/Signature.e54cfcfc.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.69c2bebb.js",
+    "static/js/runtime-main.183cf467.js",
     "static/js/2.7ee7b19f.chunk.js",
-    "static/css/main.8eba32c7.chunk.css",
-    "static/js/main.c592438f.chunk.js"
+    "static/css/main.133aa03f.chunk.css",
+    "static/js/main.22eb5b54.chunk.js"
   ]
 }
