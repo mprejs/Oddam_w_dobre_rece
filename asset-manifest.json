@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/oddam-w-dobre-rece/static/css/main.270553b7.chunk.css",
-    "main.js": "/oddam-w-dobre-rece/static/js/main.44303d9c.chunk.js",
-    "main.js.map": "/oddam-w-dobre-rece/static/js/main.44303d9c.chunk.js.map",
-    "runtime-main.js": "/oddam-w-dobre-rece/static/js/runtime-main.2824d70b.js",
-    "runtime-main.js.map": "/oddam-w-dobre-rece/static/js/runtime-main.2824d70b.js.map",
-    "static/js/2.7ee7b19f.chunk.js": "/oddam-w-dobre-rece/static/js/2.7ee7b19f.chunk.js",
-    "static/js/2.7ee7b19f.chunk.js.map": "/oddam-w-dobre-rece/static/js/2.7ee7b19f.chunk.js.map",
-    "index.html": "/oddam-w-dobre-rece/index.html",
-    "precache-manifest.b659d5c760c0b6948528d9181d5aa43c.js": "/oddam-w-dobre-rece/precache-manifest.b659d5c760c0b6948528d9181d5aa43c.js",
-    "service-worker.js": "/oddam-w-dobre-rece/service-worker.js",
-    "static/css/main.270553b7.chunk.css.map": "/oddam-w-dobre-rece/static/css/main.270553b7.chunk.css.map",
-    "static/js/2.7ee7b19f.chunk.js.LICENSE.txt": "/oddam-w-dobre-rece/static/js/2.7ee7b19f.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/oddam-w-dobre-rece/static/media/Signature.e54cfcfc.svg"
+    "main.css": "/static/css/main.8eba32c7.chunk.css",
+    "main.js": "/static/js/main.c592438f.chunk.js",
+    "main.js.map": "/static/js/main.c592438f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.69c2bebb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.69c2bebb.js.map",
+    "static/js/2.7ee7b19f.chunk.js": "/static/js/2.7ee7b19f.chunk.js",
+    "static/js/2.7ee7b19f.chunk.js.map": "/static/js/2.7ee7b19f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3c3d0d114ba9629b76185c948a6cb874.js": "/precache-manifest.3c3d0d114ba9629b76185c948a6cb874.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8eba32c7.chunk.css.map": "/static/css/main.8eba32c7.chunk.css.map",
+    "static/js/2.7ee7b19f.chunk.js.LICENSE.txt": "/static/js/2.7ee7b19f.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/Signature.e54cfcfc.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2824d70b.js",
+    "static/js/runtime-main.69c2bebb.js",
     "static/js/2.7ee7b19f.chunk.js",
-    "static/css/main.270553b7.chunk.css",
-    "static/js/main.44303d9c.chunk.js"
+    "static/css/main.8eba32c7.chunk.css",
+    "static/js/main.c592438f.chunk.js"
   ]
 }
