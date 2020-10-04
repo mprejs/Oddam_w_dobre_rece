@@ -267,3 +267,93 @@ body {
         background-size: cover;
     }
 }
+
+.homeWhoWeHelp {
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 45px;
+    .whoWeHelpList {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        .whoWeHelpOrgBtn {
+            width: 170px;
+            height: 80px;
+            padding: 0 40px;
+            margin: 0 45px;
+            list-style: none;
+            font-family: $font-base;
+            font-size: 24px;
+            color: $color-main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .whoWeHelpDisctirpion {
+        width: 34vw;
+        margin: 66px 0;
+        font-family: $font-base;
+        font-size: 22px;
+        color: $color-main;
+        text-align: center;
+    }
+    .whoWeHelpOrgList {
+        width: 70vw;
+        list-style-type: none;
+        .orgListOrg {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 0;
+            align-items: center;
+            border-bottom: 1px solid $color-underline;
+            .orgListOrgDiscription {
+                .orgListName {
+                    font-family: $font-base;
+                    font-size: 26px;
+                    color: $color-main;
+                }
+                .orgListTarget {
+                    font-family: $font-base;
+                    font-size: 18px;
+                    color: $color-main;
+                }
+            }
+            .orgListNeeds {
+                font-family: $font-alt;
+                font-size: 18px;
+                color: $color-main;
+                font-weight: 300;
+                text-align: right;
+            }
+        }
+    }
+    .pagination {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .page-item {
+            width: 40px;
+            height: 50px;
+            margin: 0 8px;
+            .page-link {
+                font-family: $font-base;
+                font-size: 18px;
+                color: $color-main;
+                text-align: center;
+                text-decoration: none;
+            }
+            .pageActive {
+                border: 1px solid $color-underline;
+            }
+        }
+    }
+}
