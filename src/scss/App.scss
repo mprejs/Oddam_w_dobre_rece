@@ -8,6 +8,10 @@ body {
     box-sizing: border-box;
 }
 
+.page-container {
+    position: relative;
+}
+
 .mainText {
     color: $color-main;
     font-size: 38px;
@@ -31,15 +35,20 @@ body {
     width: 310px;    
     display: flex;
     justify-content: center;
-    align-items: center;
-    * {
+    a { 
+        width: 100%;
+        height: 100%;
+        display: flex;
         text-decoration: none;
-        text-transform: uppercase;;
+        text-transform: uppercase;
         text-align: center;
-        font: normal normal 300 36px/45px Open Sans;
-        letter-spacing: 0px;
-        color: #3C3C3C;
-        opacity: 1;
+        font-family: $font-base;
+        font-size: 36px;
+        font-weight: 300;
+        color: $color-main;
+        span {
+            margin: auto;
+        }
     }
 }
 
@@ -270,9 +279,10 @@ body {
 
 .homeWhoWeHelp {
     width: 99vw;
+    height: 1000px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -294,6 +304,9 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .orgActive {
+            border: 1px solid $color-underline
         }
     }
     .whoWeHelpDisctirpion {
@@ -344,16 +357,350 @@ body {
             width: 40px;
             height: 50px;
             margin: 0 8px;
-            .page-link {
-                font-family: $font-base;
-                font-size: 18px;
-                color: $color-main;
-                text-align: center;
-                text-decoration: none;
+            font-family: $font-base;
+            font-size: 18px;
+            color: $color-main;
+            text-align: center;
+            text-decoration: none;
+            line-height: 50px;
+        }
+        .pageActive {
+            border: 1px solid $color-underline;
+        }
+    }
+}
+
+.homeContact {
+    width: 99vw;
+    height: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    .formContainer {
+        width: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 45px;
+        margin-right: 9vw;
+        position: relative;
+        z-index: 2;
+        .contactForm {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .errorMsg {
+                color: red;
             }
-            .pageActive {
-                border: 1px solid $color-underline;
+            .succesMsg {
+                color: green;
+                padding: 20px 140px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 250px;
+                text-align: center;
+                font-weight: 700;
+            }
+            .fieldContainer {
+                height: 100px;
+                .contactFormLabel {
+                    width: 256px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    text-align: right;
+                    font-family: $font-base;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $color-main;
+                    line-height: 45px;
+                    color: #3C3C3C;
+                    input {
+                        width: 256px;
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        border-bottom: 1px solid $color-underline;
+                        background-color: transparent;
+                        font-family: $font-base;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: $color-main;
+                        &::placeholder {
+                            white-space: normal;
+                            color: #3c3c3c26;
+                        }
+                    }
+                }
+            }
+            .contactFormTextarea {
+                width: 530px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                font-family: $font-base;
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-main;
+                line-height: 45px;
+                color: #3C3C3C;
+                textarea {
+                    width: 530px;
+                    height: 97px;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    border-bottom: 1px solid $color-underline;
+                    background-color: transparent;
+                    font-family: $font-base;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $color-main;
+                    overflow-wrap: normal;
+                    word-wrap: normal;
+                    resize: none;
+                    &::placeholder {
+                        white-space: normal;
+                        color: #3c3c3c26;
+                    }
+                }
+            }
+            .contactFormSubmit {
+                border: 0.75px solid $color-main;
+                margin-top: 40px;
+                margin-right: 0;
+                margin-left: auto;
+                height: 50px;
+                width: 150px;    
+                text-align: center;
+                font: normal normal 300 18px/45px Open Sans;
+                color: $color-main;
+                background-color: inherit;
+                justify-self: flex-end;
             }
         }
+    }
+    &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(../assets/Background-Contact-Form.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    }
+}
+
+.homeFooter {
+    width: 99vw;
+    height: 50px;
+    position: relative;
+    .footerCopywrites {
+        display: block;
+        line-height: 50px;
+        text-align: center;
+    }
+    .footerSocialMedia {
+        position: absolute;
+        right: 9vw;
+        bottom: 0;
+        display: flex;
+        .socialMediaFB {
+            width: 30px;
+            height: 30px;
+            background-image: url(../assets/Facebook.svg);
+            background-size: contain;
+            margin: 10px;
+        }
+        .socialMediaInsta {
+            width: 30px;
+            height: 30px;
+            background-image: url(../assets/Instagram.svg);
+            background-size: contain;
+            margin: 10px;
+        }
+    }
+}
+
+.logowanieContainer {
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    .logowanieForm {
+        width: 500px;
+        margin: 0 auto;
+        .errorMsg {
+            color: red;
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+        .logowanieInputContainer {
+            width: 380px;
+            height: 155px;
+            margin: auto;
+            padding: 40px 0;
+            background-color: $color-background-alt;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .logowanieFormLabel {
+                width: 250px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: right;
+                font-family: $font-base;
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-main;
+                line-height: 45px;
+                color: #3C3C3C;
+                input {
+                    width: 256px;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    border-bottom: 1px solid $color-underline;
+                    background-color: transparent;
+                    font-family: $font-base;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $color-main;
+                }
+            }
+        }
+        .logowanieBtnContainer {
+            display: flex;
+            justify-content: space-between;
+            .logowanieBtn {
+                border: 0.75px solid $color-main;
+                margin-top: 40px;
+                padding: 0;
+                height: 50px;
+                width: 117px;    
+                text-align: center;
+                font: normal normal 300 18px/50px Open Sans;
+                color: $color-main;
+                background-color: inherit;
+                justify-self: flex-end;
+                text-decoration: none;
+            }
+            a.logowanieBtn {
+                border: none;
+            }
+        }
+    }
+}
+
+.rejestracjaContainer {
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    .rejestracjaForm {
+        width: 500px;
+        margin: 0 auto;
+        .errorMsg {
+            color: red;
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+        .rejestracjaInputContainer {
+            width: 380px;
+            margin: auto;
+            padding: 40px 0;
+            background-color: $color-background-alt;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .rejestracjaFormLabel {
+                width: 250px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: right;
+                font-family: $font-base;
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-main;
+                line-height: 45px;
+                color: #3C3C3C;
+                input {
+                    width: 256px;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    border-bottom: 1px solid $color-underline;
+                    background-color: transparent;
+                    font-family: $font-base;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $color-main;
+                }
+            }
+        }
+        .rejestracjaBtnContainer {
+            display: flex;
+            justify-content: space-between;
+            .rejestracjaBtn {
+                border: 0.75px solid $color-main;
+                margin-top: 40px;
+                padding: 0;
+                height: 50px;
+                width: 117px;    
+                text-align: center;
+                font: normal normal 300 18px/50px Open Sans;
+                color: $color-main;
+                background-color: inherit;
+                justify-self: flex-end;
+                text-decoration: none;
+            }
+            a.rejestracjaBtn {
+                border: none;
+            }
+        }
+    }
+}
+
+.wylogowanoContainer {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 calc((99vw - 500px) /2);
+    .wylogowanoBtn {
+        border: 0.75px solid $color-main;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        height: 50px;
+        width: 150px;    
+        text-align: center;
+        font: normal normal 300 18px/50px Open Sans;
+        color: $color-main;
+        background-color: inherit;
+        text-decoration: none;
     }
 }

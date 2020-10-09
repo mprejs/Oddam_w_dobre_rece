@@ -1,10 +1,9 @@
-import React from 'react';
-
 const HomeOrgList = () => {
     return (
         [
             {
                 'orgType' : 'fundations',
+                'discription' : 'W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.',
                 'orgs': [
                     {
                         'name': 'est.',
@@ -55,6 +54,7 @@ const HomeOrgList = () => {
             },
             {
                 'orgType' : 'organizations',
+                'discription' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. ',
                 'orgs': [
                     {
                         'name': 'Pellentesque ut',
@@ -90,6 +90,7 @@ const HomeOrgList = () => {
             },
             {
                 'orgType' : 'local',
+                'discription' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. ',
                 'orgs': [
                     {
                         'name': 'Nam interdum enim non',

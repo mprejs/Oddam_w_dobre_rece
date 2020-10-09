@@ -11,12 +11,12 @@ const HomeMain = () => {
                 <ul className='mainRedirect'>
                     <li className='btn redirectBtn'>
                         <NavLink to='/logowanie'>
-                            oddaj <br /> rzeczy
+                            <span>oddaj <br /> rzeczy</span>
                         </NavLink>
                     </li>
                     <li  className='btn redirectBtn'>
                         <NavLink to='/logowanie'>
-                            zorganizuj zbiórkę
+                            <span>zorganizuj zbiórkę</span>
                         </NavLink>
                     </li>
                 </ul>

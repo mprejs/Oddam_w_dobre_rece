@@ -9,6 +9,7 @@ const HomeWhoWeHelp = () => {
     const [orgList, setOrgList] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [orgsPerPage] = useState(3);
+    const [orgDiscription, setOrgDiscription] = useState('');
 
     const everyOrgKind = ['fundations', 'organizations', 'local'];
     const everyOrgList = HomeOrgList();
@@ -17,16 +18,10 @@ const HomeWhoWeHelp = () => {
         const getOrgList = async () => {
             let temp = everyOrgList[everyOrgKind.indexOf(orgKind)];
             setOrgList([...temp.orgs]);
-        }
+            setOrgDiscription(temp.discription)
+        };
         getOrgList();
-    }, []); 
-
-    // useEffect ( () => {
-    //     const changeOrg = (org) => {
-    //         setOrgKind('org');
-    //     }
-    //     changeOrg
-    // } );
+    }, [orgKind]); 
 
     const indexOfLastOrg = currentPage * orgsPerPage;
     const indexOfFirstOrg = indexOfLastOrg - orgsPerPage;
@@ -40,32 +35,33 @@ const HomeWhoWeHelp = () => {
             <div className='decorativeElement' />
             <ul className='whoWeHelpList'>
                 <li 
-                    className='whoWeHelpOrgBtn whoWeHelpFundations' 
-                    onClick={() => {setOrgKind('fundations'); console.log(orgKind)}}
+                    className={`whoWeHelpOrgBtn whoWeHelpFundations ${(orgKind === 'fundations')?'orgActive':''}`} 
+                    onClick={() => {setOrgKind('fundations'); setCurrentPage(1)}}
                 >
                     Fundacjom
                 </li>
                 <li 
-                    className='whoWeHelpOrgBtn whoWeHelpOrganizations'
-                    onClick={() => {setOrgKind('organizations'); console.log(orgKind)}}    
+                    className={`whoWeHelpOrgBtn whoWeHelpOrganizations ${(orgKind === 'organizations')?'orgActive':''}`}
+                    onClick={() => {setOrgKind('organizations'); setCurrentPage(1)}}    
                 >
                     Organizacjom pozarządowym
                 </li>
                 <li 
-                    className='whoWeHelpOrgBtn whoWeHelpLocals'
-                    onClick={() => {setOrgKind('local'); console.log(orgKind)}}
+                    className={`whoWeHelpOrgBtn whoWeHelpLocals ${(orgKind === 'local')?'orgActive':''}`}
+                    onClick={() => {setOrgKind('local'); setCurrentPage(1)}}
                 >
                     Lokalnym zbiórkom
                 </li>
             </ul>
             <div className='whoWeHelpDisctirpion'>
-                W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
+                {orgDiscription}
             </div>
             <Orgs posts={currentOrgs} />
             <Pagination
                 postsPerPage={orgsPerPage}
                 totalPosts={orgList.length}
                 paginate={paginate}
+                currentPage={currentPage}
             />
         </Element>
     )

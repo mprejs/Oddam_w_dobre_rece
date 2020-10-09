@@ -1,8 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
-const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
+const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
   const pageNumbers = [];
+
+  if ( postsPerPage >= totalPosts ) {return null};
 
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
     pageNumbers.push(i);
@@ -12,10 +13,12 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     <nav>
       <ul className='pagination'>
         {pageNumbers.map(number => (
-          <li key={number} className='page-item'>
-            <a onClick={() => paginate(number)} href='javascript:void(0);' className='page-link' activeClassName='pageActive'>
-              {number}
-            </a>
+          <li 
+            key={number} 
+            className={`page-item ${(currentPage === number)?'pageActive':''}`} 
+            onClick={() => paginate(number)}
+          >
+            {number}
           </li>
         ))}
       </ul>

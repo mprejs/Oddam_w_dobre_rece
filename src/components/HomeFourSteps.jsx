@@ -40,7 +40,7 @@ const HomeFourSteps = () => {
             <ul className='mainRedirect'>
                 <li className='btn redirectBtn'>
                     <NavLink to='/logowanie'>
-                        oddaj <br /> rzeczy
+                        <span>oddaj <br /> rzeczy</span>
                     </NavLink>
                 </li>
             </ul>
